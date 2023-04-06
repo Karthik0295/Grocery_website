@@ -30,7 +30,7 @@ body{
 }
 
 .container{
-    max-width: 1068px;
+    max-width: auto;
     margin: auto;
     width: 100%;
 }
@@ -203,13 +203,20 @@ margin-top: 2rem;
 
 .shop-content{
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(220px, auto));
-    /* gap: 1.5rem; */
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+    padding-top: 5rem;
 }
 
 
 .product-box{
-   position: relative; 
+   /* position: relative;  */
+
+   position: relative;
+   height: 25rem;
+   overflow: hidden;
+   border-radius: .5rem;
+   box-shadow: var(--box-shadow);
 
 }
 
