@@ -48,6 +48,22 @@ for (var i =0; i< addCart.length; i++){
     var button = addCart[i];
     button.addEventListener("click",addCartClicked);
 }
+
+//  Buy Button
+
+document
+    .getElementsByClassName('btn-buy')[0]
+    .addEventListener("click", buyButtonClicked);
+}
+
+function buyButtonClicked(){
+    alert('Thank You!! Your order is Placed :)');
+    var cartContent = document.getElementsByClassName("cart-content")[0];
+    while (cartContent.hasChildNodes()){
+        cartContent.removeChild(cartContent.firstChild);
+
+}
+updatetotal();
 }
 
 //Removing Items from the cart
