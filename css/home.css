@@ -39,7 +39,65 @@ section{
 
 }
 
+/* .categories{
+    display: grid;
+    grid-template-columns: 32% 50% 18%;
+    align-items: center;
+    margin-left: 35%;
+    margin-right: 35%;
+    height: 20px;
+    width: 1000px;
+    margin-top: 100px;
 
+} */
+
+
+.categories { 
+    height: 300px;
+    position: relative;
+    margin-top: 80px;
+    background-image: url('/images/banner3.png');
+    background-repeat: no-repeat;
+    
+    /* border: 3px solid green;  */
+  }
+.buttons{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    margin-left: 25px;
+    margin-top: 25px;
+
+   
+   
+}
+
+#cartbutts{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 6px;
+    margin-top: 6px;
+    height: 70px;
+    width: 170px;
+}
+
+/* .button{
+    height: 25px;
+} */
+
+.cats{
+    display: inline;
+    text-align: center;
+}
 /* Header */
 
 header{
@@ -71,6 +129,7 @@ header{
 #cart-icon{
     font-size: 1.8rem;
     cursor: pointer;
+    margin-bottom: 0;
 }
 
 /* cart */
@@ -197,15 +256,21 @@ margin-top: 2rem;
 
 .shop{
     margin-top: 1rem ;
+   
 }
 
 /* Shop content */
 
 .shop-content{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 2fr));
     gap: 1.5rem;
     padding-top: 5rem;
+    
+    
+    margin: none;
+    
+   
 }
 
 
@@ -213,10 +278,15 @@ margin-top: 2rem;
    /* position: relative;  */
 
    position: relative;
-   height: 25rem;
+   height: 15rem;
+   width: 10rem;
    overflow: hidden;
    border-radius: .5rem;
-   box-shadow: var(--box-shadow);
+   box-shadow: 8px 5px 5px 5px gray;
+   background-color: aliceblue;
+   margin-top: none;
+   margin-bottom: 20px;
+   /* border: 1px solid rgb(15, 91, 0); */
 
 }
 
@@ -258,4 +328,8 @@ margin-top: 2rem;
 .add-cart:hover{
     /* background: hsl(hue, saturation, lightness); */
     background: hsl(0, 0%, 77%);
+}
+
+.diffrentiate{
+    display: inline;
 }
