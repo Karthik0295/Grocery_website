@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Grofers Products</title>
     <link rel="stylesheet" href="/css/home.css">
 
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -15,7 +15,7 @@
     <!-- Header section -->
     <header>
         <div class="nav container">
-            <a href="#" class="logo"> <i class="fas fa-shopping-cart"></i>Grofers.in </a>
+            <a href="/HTML/index.html" class="logo"> <i class="fas fa-shopping-cart"></i>Grofers.in </a>
 
 
             <!-- <nav class="navbar">
@@ -37,7 +37,7 @@
             <div id="cart-btn" class="fas fa-shopping-basket" style="color: black;"></div>
             <!-- <i class='bx bxs-user' id = "user" style="color: black;"></i> -->
             <!-- Cart -->
-            <div class="cart">
+            <div class="cart" id = cartshow>
                 <h2 class="cart-title" style="color: black;">Your cart</h2>
                 
                
@@ -50,11 +50,12 @@
 
                 <div class="total">
                     <div class="total-title" style="color: black;">Total</div>
-                        <div class="total-price" style="color: black;">$0</div>
+                        <div class="total-price" style="color: black;">Rs. 0</div>
                 </div>
                 <!-- Buy Button -->
                
                 <button type="button" class="btn-buy">Buy Now</button> 
+                <button onclick="topFunction()" id="myBtn" title="Go to top">GoTop</button>
             
                 <!-- Cart Close -->
 
@@ -84,18 +85,18 @@
             
             <!-- Box1 -->
             <div class="product-box">
-               <img src="/images/cucum.jpeg" alt="" class="product-img">
-               <h2 class="product-title" style="color: black;">Cucumber</h2>
-               <span class="price" style="color: black;" >$28</span>
-               <i class='bx bxs-cart add-cart' style="color: rgb(0, 0, 0);"></i>
-            </div>
-
+                <img src="/images/cucum.jpeg" alt="" class="product-img">
+                <h2 class="product-title" style="color: black;">Cucumber</h2>
+                <span class="price" style="color: black;" >Rs.49</span>
+                <i class='bx bxs-cart add-cart' style="color: rgb(0, 0, 0);"></i>
+             </div>
+ 
 
                <!-- Box2 -->
                <div class="product-box">
                 <img src="/images/potato.jpg" alt="" class="product-img">
                 <h2 class="product-title" style="color: black;">Potato</h2>
-                <span class="price" style="color: black;" >$35</span>
+                <span class="price" style="color: black;" >Rs.35</span>
                 <i class='bx bxs-cart add-cart' style="color: rgb(0, 0, 0);"></i>
              </div>
  
@@ -104,7 +105,7 @@
             <div class="product-box">
                 <img src="/images/corn.jpg" alt="" class="product-img">
                 <h2 class="product-title" style="color: black;">Sweet Corn</h2>
-                <span class="price" style="color: black;" >$45</span>
+                <span class="price" style="color: black;" >Rs.45</span>
                 <i class='bx bxs-cart add-cart' style="color: rgb(0, 0, 0);"></i>
              </div>
  
@@ -113,7 +114,7 @@
             <div class="product-box">
                 <img src="/images/onion.jpg" alt="" class="product-img">
                 <h2 class="product-title" style="color: black;">onion</h2>
-                <span class="price" style="color: black;" >$15</span>
+                <span class="price" style="color: black;" >Rs.15</span>
                 <i class='bx bxs-cart add-cart' style="color: rgb(0, 0, 0);"></i>
              </div>
              
@@ -122,7 +123,7 @@
             <div class="product-box">
                 <img src="/images/coconut.jpg" alt="" class="product-img">
                 <h2 class="product-title" style="color: black;">Coconut</h2>
-                <span class="price" style="color: black;" >$23</span>
+                <span class="price" style="color: black;" >Rs.23</span>
                 <i class='bx bxs-cart add-cart' style="color: rgb(0, 0, 0);"></i>
              </div>
 
@@ -131,7 +132,7 @@
             <div class="product-box">
                 <img src="/images/tomato.jpg" alt="" class="product-img">
                 <h2 class="product-title" style="color: black;">Tomato</h2>
-                <span class="price" style="color: black;" >$25</span>
+                <span class="price" style="color: black;" >Rs.25</span>
                 <i class='bx bxs-cart add-cart' style="color: rgb(0, 0, 0);"></i>
              </div>
 
@@ -140,7 +141,7 @@
             <div class="product-box">
                 <img src="/images/lauki.jpg" alt="" class="product-img">
                 <h2 class="product-title" style="color: black;">Lauki</h2>
-                <span class="price" style="color: black;" >$2</span>
+                <span class="price" style="color: black;" >Rs.2</span>
                 <i class='bx bxs-cart add-cart' style="color: rgb(0, 0, 0);"></i>
              </div>
  
@@ -148,7 +149,7 @@
             <div class="product-box">
                <img src="/images/Bhendi.jpg" alt="" class="product-img">
                <h2 class="product-title" style="color: black;">Bhendi</h2>
-               <span class="price" style="color: black;" >$28</span>
+               <span class="price" style="color: black;" >Rs.28</span>
                <i class='bx bxs-cart add-cart' style="color: rgb(0, 0, 0);"></i>
             </div>
 
@@ -156,7 +157,7 @@
             <div class="product-box">
                 <img src="/images/drumstick.jpg" alt="" class="product-img">
                 <h2 class="product-title" style="color: black;">Drumstick</h2>
-                <span class="price" style="color: black;" >$28</span>
+                <span class="price" style="color: black;" >Rs.28</span>
             <i class='bx bxs-cart add-cart' style="color: rgb(0, 0, 0);"></i>
             </div>
 
@@ -164,7 +165,7 @@
                   <div class="product-box">
                     <img src="/images/carrot.jpg" alt="" class="product-img">
                     <h2 class="product-title" style="color: black;">Carrot</h2>
-                    <span class="price" style="color: black;" >$28</span>
+                    <span class="price" style="color: black;" >Rs.28</span>
                 <i class='bx bxs-cart add-cart' style="color: rgb(0, 0, 0);"></i>
                 </div>
 
@@ -173,7 +174,7 @@
                  <div class="product-box">
                     <img src="/images/beetroot.jpg" alt="" class="product-img">
                     <h2 class="product-title" style="color: black;">Beetroot</h2>
-                    <span class="price" style="color: black;" >$28</span>
+                    <span class="price" style="color: black;" >Rs.28</span>
                 <i class='bx bxs-cart add-cart' style="color: rgb(0, 0, 0);"></i>
                 </div>
 
@@ -182,7 +183,7 @@
                  <div class="product-box">
                     <img src="/images/curryleaves.jpg" alt="" class="product-img">
                     <h2 class="product-title" style="color: black;">Curry Leaves</h2>
-                    <span class="price" style="color: black;" >$28</span>
+                    <span class="price" style="color: black;" >Rs.28</span>
                 <i class='bx bxs-cart add-cart' style="color: rgb(0, 0, 0);"></i>
                 </div>
 
@@ -192,7 +193,7 @@
                  <div class="product-box">
                     <img src="/images/capsicum.jpg" alt="" class="product-img">
                     <h2 class="product-title" style="color: black;">Capsicum</h2>
-                    <span class="price" style="color: black;" >$28</span>
+                    <span class="price" style="color: black;" >Rs.28</span>
                 <i class='bx bxs-cart add-cart' style="color: rgb(0, 0, 0);"></i>
                 </div>
 
@@ -201,7 +202,7 @@
                  <div class="product-box">
                     <img src="/images/cauliflower.jpg" alt="" class="product-img">
                     <h2 class="product-title" style="color: black;">Cauliflower</h2>
-                    <span class="price" style="color: black;" >$28</span>
+                    <span class="price" style="color: black;" >Rs.28</span>
                 <i class='bx bxs-cart add-cart' style="color: rgb(0, 0, 0);"></i>
                 </div>
 
@@ -211,7 +212,7 @@
                  <div class="product-box">
                     <img src="/images/spinach.jpg" alt="" class="product-img">
                     <h2 class="product-title" style="color: black;">Spinach</h2>
-                    <span class="price" style="color: black;" >$28</span>
+                    <span class="price" style="color: black;" >Rs.28</span>
                 <i class='bx bxs-cart add-cart' style="color: rgb(0, 0, 0);"></i>
                 </div>
                 
@@ -221,7 +222,7 @@
                  <div class="product-box">
                     <img src="/images/raddish.jpg" alt="" class="product-img">
                     <h2 class="product-title" style="color: black;">Raddish</h2>
-                    <span class="price" style="color: black;" >$28</span>
+                    <span class="price" style="color: black;" >Rs.28</span>
                 <i class='bx bxs-cart add-cart' style="color: rgb(0, 0, 0);"></i>
                 </div>
 
@@ -229,7 +230,7 @@
                    <div class="product-box">
                     <img src="/images/beans.jpg" alt="" class="product-img">
                     <h2 class="product-title" style="color: black;">Beans</h2>
-                    <span class="price" style="color: black;" >$28</span>
+                    <span class="price" style="color: black;" >Rs.28</span>
                 <i class='bx bxs-cart add-cart' style="color: rgb(0, 0, 0);"></i>
                 </div>
 
@@ -238,7 +239,7 @@
                    <div class="product-box">
                     <img src="/images/bitter.jpg" alt="" class="product-img">
                     <h2 class="product-title" style="color: black;">Bitter Gourd</h2>
-                    <span class="price" style="color: black;" >$28</span>
+                    <span class="price" style="color: black;" >Rs.28</span>
                 <i class='bx bxs-cart add-cart' style="color: rgb(0, 0, 0);"></i>
                 </div>
 
@@ -246,14 +247,14 @@
                  <div class="product-box">
                     <img src="/images/mintleaves.jpg" alt="" class="product-img">
                     <h2 class="product-title" style="color: black;">Mint Leaves</h2>
-                    <span class="price" style="color: black;" >$28</span>
+                    <span class="price" style="color: black;" >Rs.28</span>
                 <i class='bx bxs-cart add-cart' style="color: rgb(0, 0, 0);"></i>
                 </div>
 
                 <div class="product-box">
                     <img src="/images/cabbage.jpg" alt="" class="product-img">
                     <h2 class="product-title" style="color: black;">Cabbage</h2>
-                    <span class="price" style="color: black;" >$28</span>
+                    <span class="price" style="color: black;" >Rs.28</span>
                 <i class='bx bxs-cart add-cart' style="color: rgb(0, 0, 0);"></i>
                 </div>
     
@@ -281,7 +282,7 @@
             <div class="product-box">
                <img src="/images/grapes.jpg" alt="" class="product-img">
                <h2 class="product-title" style="color: black;">Grapes</h2>
-               <span class="price" style="color: black;" >$28</span>
+               <span class="price" style="color: black;" >Rs.28</span>
                <i class='bx bxs-cart add-cart' style="color: rgb(0, 0, 0);"></i>
             </div>
 
@@ -290,7 +291,7 @@
                <div class="product-box">
                 <img src="/images/watermelon.jpg" alt="" class="product-img">
                 <h2 class="product-title" style="color: black;">WaterMelon</h2>
-                <span class="price" style="color: black;" >$35</span>
+                <span class="price" style="color: black;" >Rs.35</span>
                 <i class='bx bxs-cart add-cart' style="color: rgb(0, 0, 0);"></i>
              </div>
  
@@ -299,7 +300,7 @@
             <div class="product-box">
                 <img src="/images/muskmelon.jpg" alt="" class="product-img">
                 <h2 class="product-title" style="color: black;">Musk Melon</h2>
-                <span class="price" style="color: black;" >$45</span>
+                <span class="price" style="color: black;" >Rs.45</span>
                 <i class='bx bxs-cart add-cart' style="color: rgb(0, 0, 0);"></i>
              </div>
  
@@ -308,7 +309,7 @@
             <div class="product-box">
                 <img src="/images/orange.jpg" alt="" class="product-img">
                 <h2 class="product-title" style="color: black;">Orange</h2>
-                <span class="price" style="color: black;" >$15</span>
+                <span class="price" style="color: black;" >Rs.15</span>
                 <i class='bx bxs-cart add-cart' style="color: rgb(0, 0, 0);"></i>
              </div>
              
@@ -317,7 +318,7 @@
             <div class="product-box">
                 <img src="/images/Mango.jpg" alt="" class="product-img">
                 <h2 class="product-title" style="color: black;">Mango</h2>
-                <span class="price" style="color: black;" >$23</span>
+                <span class="price" style="color: black;" >Rs.23</span>
                 <i class='bx bxs-cart add-cart' style="color: rgb(0, 0, 0);"></i>
              </div>
 
@@ -326,7 +327,7 @@
             <div class="product-box">
                 <img src="/images/banana.jpg" alt="" class="product-img">
                 <h2 class="product-title" style="color: black;">banana</h2>
-                <span class="price" style="color: black;" >$25</span>
+                <span class="price" style="color: black;" >Rs.25</span>
                 <i class='bx bxs-cart add-cart' style="color: rgb(0, 0, 0);"></i>
              </div>
 
@@ -335,7 +336,7 @@
             <div class="product-box">
                 <img src="/images/papaya.jpg" alt="" class="product-img">
                 <h2 class="product-title" style="color: black;">papaya</h2>
-                <span class="price" style="color: black;" >$2</span>
+                <span class="price" style="color: black;" >Rs.2</span>
                 <i class='bx bxs-cart add-cart' style="color: rgb(0, 0, 0);"></i>
              </div>
  
@@ -343,7 +344,7 @@
             <div class="product-box">
                <img src="/images/pineapple.jpg" alt="" class="product-img">
                <h2 class="product-title" style="color: black;">Pineapple</h2>
-               <span class="price" style="color: black;" >$28</span>
+               <span class="price" style="color: black;" >Rs.28</span>
                <i class='bx bxs-cart add-cart' style="color: rgb(0, 0, 0);"></i>
             </div>
 
@@ -351,7 +352,7 @@
             <div class="product-box">
                 <img src="/images/pomegrnate.jpg" alt="" class="product-img">
                 <h2 class="product-title" style="color: black;">pomegrnate</h2>
-                <span class="price" style="color: black;" >$28</span>
+                <span class="price" style="color: black;" >Rs.28</span>
             <i class='bx bxs-cart add-cart' style="color: rgb(0, 0, 0);"></i>
             </div>
 
@@ -359,7 +360,7 @@
             <div class="product-box">
                 <img src="/images/kiwi.jpg" alt="" class="product-img">
                 <h2 class="product-title" style="color: black;">Kiwi</h2>
-                <span class="price" style="color: black;" >$28</span>
+                <span class="price" style="color: black;" >Rs.28</span>
             <i class='bx bxs-cart add-cart' style="color: rgb(0, 0, 0);"></i>
             </div>
 
@@ -384,7 +385,7 @@
             <div class="product-box">
                <img src="/images/butter.jpg" alt="" class="product-img">
                <h2 class="product-title" style="color: black;">Amul butter</h2>
-               <span class="price" style="color: black;" >$28</span>
+               <span class="price" style="color: black;" >Rs.28</span>
                <i class='bx bxs-cart add-cart' style="color: rgb(0, 0, 0);"></i>
             </div>
 
@@ -393,7 +394,7 @@
                <div class="product-box">
                 <img src="/images/milk.jpg" alt="" class="product-img">
                 <h2 class="product-title" style="color: black;">Milk</h2>
-                <span class="price" style="color: black;" >$35</span>
+                <span class="price" style="color: black;" >Rs.35</span>
                 <i class='bx bxs-cart add-cart' style="color: rgb(0, 0, 0);"></i>
              </div>
  
@@ -402,7 +403,7 @@
             <div class="product-box">
                 <img src="/images/rusk.jpg" alt="" class="product-img">
                 <h2 class="product-title" style="color: black;">Parle Rusk</h2>
-                <span class="price" style="color: black;" >$45</span>
+                <span class="price" style="color: black;" >Rs.45</span>
                 <i class='bx bxs-cart add-cart' style="color: rgb(0, 0, 0);"></i>
              </div>
  
@@ -411,7 +412,7 @@
             <div class="product-box">
                 <img src="/images/muffin.jpg" alt="" class="product-img">
                 <h2 class="product-title" style="color: black;">britannia Muffin</h2>
-                <span class="price" style="color: black;" >$15</span>
+                <span class="price" style="color: black;" >Rs.15</span>
                 <i class='bx bxs-cart add-cart' style="color: rgb(0, 0, 0);"></i>
              </div>
              
@@ -420,7 +421,7 @@
             <div class="product-box">
                 <img src="/images/bread.jpg" alt="" class="product-img">
                 <h2 class="product-title" style="color: black;">Brwon Bread</h2>
-                <span class="price" style="color: black;" >$23</span>
+                <span class="price" style="color: black;" >Rs.23</span>
                 <i class='bx bxs-cart add-cart' style="color: rgb(0, 0, 0);"></i>
              </div>
 
@@ -429,7 +430,7 @@
             <div class="product-box">
                 <img src="/images/pav.jpg" alt="" class="product-img">
                 <h2 class="product-title" style="color: black;">Britannia Pav</h2>
-                <span class="price" style="color: black;" >$25</span>
+                <span class="price" style="color: black;" >Rs.25</span>
                 <i class='bx bxs-cart add-cart' style="color: rgb(0, 0, 0);"></i>
              </div>
 
@@ -438,7 +439,7 @@
             <div class="product-box">
                 <img src="/images/peas.jpg" alt="" class="product-img">
                 <h2 class="product-title" style="color: black;">Green Peas</h2>
-                <span class="price" style="color: black;" >$2</span>
+                <span class="price" style="color: black;" >Rs.2</span>
                 <i class='bx bxs-cart add-cart' style="color: rgb(0, 0, 0);"></i>
              </div>
  
@@ -446,7 +447,7 @@
             <div class="product-box">
                <img src="/images/smiles.jpg" alt="" class="product-img">
                <h2 class="product-title" style="color: black;">McCain Smiles</h2>
-               <span class="price" style="color: black;" >$28</span>
+               <span class="price" style="color: black;" >Rs.28</span>
                <i class='bx bxs-cart add-cart' style="color: rgb(0, 0, 0);"></i>
             </div>
 
@@ -454,7 +455,7 @@
             <div class="product-box">
                 <img src="/images/tikki.jpg" alt="" class="product-img">
                 <h2 class="product-title" style="color: black;">Aloo Tikki</h2>
-                <span class="price" style="color: black;" >$28</span>
+                <span class="price" style="color: black;" >Rs.28</span>
             <i class='bx bxs-cart add-cart' style="color: rgb(0, 0, 0);"></i>
             </div>
 
@@ -462,15 +463,21 @@
             <div class="product-box">
                 <img src="/images/nuggets.jpg" alt="" class="product-img">
                 <h2 class="product-title" style="color: black;">Corn Nuggets</h2>
-                <span class="price" style="color: black;" >$28</span>
+                <span class="price" style="color: black;" >Rs.28</span>
             <i class='bx bxs-cart add-cart' style="color: rgb(0, 0, 0);"></i>
             </div>
 
 
 
- </div>
+        </div>
     </section>
 
+
+   <section class="footer">
+
+    <span><p class="foota"> All Rights Reserved</p></span>
+    <span><p class="footb">&copyGrofers.IN</p></span>
+   </section>
 
     
 

@@ -138,7 +138,7 @@ function updatetotal(){
         var cartBox = cartBoxes[i];
         var priceElement = cartBox.getElementsByClassName("cart-price")[0];
         var quantityElement = cartBox.getElementsByClassName("cart-quantity")[0];
-        var price = parseFloat(priceElement.innerText.replace("$", ""));
+        var price = parseFloat(priceElement.innerText.replace("Rs.", ""));
         var quantity = quantityElement.value;
         total = total + price * quantity;
 
@@ -146,6 +146,27 @@ function updatetotal(){
 
         total = Math.round(total * 100)/100;
 
-        document.getElementsByClassName('total-price')[0].innerText = "$" + total;
+        document.getElementsByClassName('total-price')[0].innerText = "Rs." + total;
     }
+}
+
+
+// Get the button:
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+ 
+  document.documentElement.scrollTop = 0; // F
 }
