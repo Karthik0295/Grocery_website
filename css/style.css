@@ -35,7 +35,7 @@ html::-webkit-scrollbar-track{
 }
 
 html::-webkit-scrollbar-thumb{
-  background: var(--primary-color);
+  background: none;
   border-radius: 5rem;
 }
 
@@ -91,11 +91,12 @@ section{
 .header .logo{
   font-size: 2.5rem;
   font-weight: bolder;
-  color: var(--black);
+  color: black;
+  
 }
 
 .header .logo i{
-  color: var(--secondary);
+  color: black;
   padding-right: .5rem;
 }
 
@@ -777,7 +778,7 @@ section{
   }
 
   .home .content h3{
-    font-size: 4.5rem;
+    font-size: 10.5rem;
   }
 
   .about .row .image img{
@@ -787,12 +788,14 @@ section{
 
 }
 
-@media (max-width: 450px){
+@media (max-width: 1000px){
   html{
     font-size: 50%;
   }
 
   .home .content h3{
     font-size: 3.5rem;
+    color:#3bb77e;
+    width: auto;
   }
 }
