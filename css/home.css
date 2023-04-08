@@ -78,14 +78,16 @@ section{
     padding: 7px;
 }
 .categories { 
-    height: 300px;
+   
     position: relative;
     margin-top: 80px;
-    background-image: url('images\banner8.webp');
     background-repeat:repeat-y;
+  }
+
+  .homebanner{
     background-size: cover;
-    
-    /* border: 3px solid green;  */
+    height: 400px;
+
   }
 .buttons{
     margin: 0;
