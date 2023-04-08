@@ -81,7 +81,7 @@ section{
     height: 300px;
     position: relative;
     margin-top: 80px;
-    background-image: url('banner8.webp');
+    background-image: url('/images/banner8.webp');
     background-repeat:repeat-y;
     background-size: cover;
     

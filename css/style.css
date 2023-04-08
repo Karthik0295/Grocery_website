@@ -266,7 +266,7 @@ section{
 
 .home{
   min-height: 100vh;
-  background: url(home_bg.jpg);
+  background: url(../images/home_bg.jpg);
   background-size: cover !important;
   background-position: center !important;
   position: relative;
