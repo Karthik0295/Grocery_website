@@ -315,6 +315,7 @@ margin-top: 2rem;
     gap: 1.5rem;
     padding-top: 5rem;
     margin-left: 25px;
+    align-items: center;
     
     
  
@@ -335,6 +336,7 @@ margin-top: 2rem;
    background-color: rgb(255, 255, 255);
    margin-top: none;
    margin-bottom: 20px;
+   /* float: right; */
    
 }
 
