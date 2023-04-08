@@ -6,13 +6,13 @@ document.querySelector('#cart-btn').onclick = () =>{
   navbar.classList.remove('active');
 }
 
-let login = document.querySelector('.login-form');
+// let login = document.querySelector('.login-form');
 
-document.querySelector('#login-btn').onclick = () =>{
-  login.classList.toggle('active');
-  cart.classList.remove('active');
-  navbar.classList.remove('active');
-}
+// document.querySelector('#login-btn').onclick = () =>{
+//   login.classList.toggle('active');
+//   cart.classList.remove('active');
+//   navbar.classList.remove('active');
+// }
 
 let navbar = document.querySelector('.navbar');
 
@@ -28,7 +28,7 @@ window.onscroll = () =>{
   cart.classList.remove('active');
 }
 
-var swiper = new Swiper(".review-slider", {
+var swiper = new swiper(".review-slider", {
   spaceBetween:20,
   centeredSlides: true,
   autoplay: {
