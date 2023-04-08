@@ -312,11 +312,12 @@ margin-top: 2rem;
 .shop-content{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(10rem, 3fr));
-    gap: 1.5rem;
-    padding-top: 5rem;
-    margin-left: 25px;
+    gap: 1rem;
+    padding-top: 3rem;
+    margin-left: 20px;
     margin-right: 0px;
-    align-items: center;
+    
+    text-align: center;
     
     
  
@@ -332,11 +333,13 @@ margin-top: 2rem;
    height: 15rem;
    width: 8.5rem;
    overflow: hidden;
+ 
    
    box-shadow: 8px 5px 5px 5px rgb(157, 157, 157);
    background-color: rgb(255, 255, 255);
    margin-top: none;
    margin-bottom: 20px;
+   margin-left: 50px;
    /* float: right; */
    
 }
