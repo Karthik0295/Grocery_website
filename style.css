@@ -47,13 +47,13 @@ section{
   text-align: center;
   padding: 1.2rem 0;
   margin-bottom: 3rem;
-  color: var(--primary-color);
+  color: black;
   text-transform: uppercase;
   font-size: 4rem;
 }
 
 .heading span{
-  color: var(--secondary);
+  color: black;
   text-transform: uppercase;
 }
 
@@ -266,7 +266,7 @@ section{
 
 .home{
   min-height: 100vh;
-  background: url(../images/home_bg.jpg);
+  background: url(home_bg.jpg);
   background-size: cover !important;
   background-position: center !important;
   position: relative;

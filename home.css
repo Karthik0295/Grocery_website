@@ -81,7 +81,7 @@ section{
     height: 300px;
     position: relative;
     margin-top: 80px;
-    background-image: url('/images/banner8.webp');
+    background-image: url('banner8.webp');
     background-repeat:repeat-y;
     background-size: cover;
     
@@ -270,7 +270,7 @@ margin-top: 2rem;
     cursor: pointer;
 }
 
-.btn-buy:hover{
+.buy:hover{
     background-color: black;
     color: aliceblue;
 }
@@ -418,7 +418,7 @@ height: 50px;
     z-index: 99; 
     border: none; 
     outline: none; 
-    background-color:#3bb77e; 
+    background-color:#f33b3b; 
     color: rgb(0, 0, 0); 
     cursor: pointer; 
     padding: 15px; 
