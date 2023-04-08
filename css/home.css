@@ -87,6 +87,7 @@ section{
 .homebanner{
     background-size: cover;
     height: 400px;
+    z-index: -1;
 
   }
 .buttons{
@@ -104,9 +105,9 @@ section{
 }
 
 #cartbutts{
-    background-color: #4CAF50; /* Green */
+    background-color: #4CAF50; 
     border: none;
-    color: white;
+    color: rgb(0, 0, 0);
     padding: 15px ;
     align-items: center;
   
