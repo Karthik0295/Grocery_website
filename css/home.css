@@ -107,7 +107,8 @@ section{
 #cartbutts{
     background-color: #4CAF50; 
     border: none;
-    color: rgb(255, 255, 255);
+    /* color: rgb(0, 0, 0); */
+    color: #e2f9ee;
     padding: 15px ;
     align-items: center;
   
